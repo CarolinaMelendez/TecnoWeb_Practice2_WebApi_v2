@@ -35,7 +35,8 @@ namespace Logic
        
         public User DeleteUser(User user)
         {
-            Users.Remove(user);
+            var userToRemove = Users.Find(u => u.Ci == user.Ci);
+            Users.Remove(userToRemove);
             return user;
         }
     }
