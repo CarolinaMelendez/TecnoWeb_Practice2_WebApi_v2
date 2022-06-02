@@ -27,10 +27,23 @@ namespace Practice_2_v2
         {
 
             services.AddControllers();
-            services.AddSwaggerGen(c =>
+            services.AddSwaggerGen(options =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Practice_2_v2", Version = "v1" });
-            });
+                var groupName = "v1";
+
+                options.SwaggerDoc(groupName, new OpenApiInfo
+                {
+                    Title = $"Practice 2 - {groupName}",
+                    Version = groupName,
+                    Description = "Implementación básico de Web APIs",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Carolina Melendez",
+                        Email = string.Empty,
+                        Url = new Uri("https://carolina.com/"),
+                    }
+                });
+            }); ;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +52,8 @@ namespace Practice_2_v2
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
+
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Practice_2_v2 v1"));
             }

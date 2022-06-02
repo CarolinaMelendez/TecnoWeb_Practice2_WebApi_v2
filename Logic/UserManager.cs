@@ -5,7 +5,7 @@ namespace Logic
 {
     public class UserManager
     {
-        public List<User> Users { get; set }
+        public List<User> Users { get; set; }
         public UserManager()
         {
             Users =  new List<User>()
