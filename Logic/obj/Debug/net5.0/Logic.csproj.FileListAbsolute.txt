@@ -1,0 +1,12 @@
+D:\CARITO ---Trabajos\5 Tecnologias Web\Practice 2 Web Api v2\Practice_2_v2\Logic\bin\Debug\net5.0\Logic.deps.json
+D:\CARITO ---Trabajos\5 Tecnologias Web\Practice 2 Web Api v2\Practice_2_v2\Logic\bin\Debug\net5.0\Logic.dll
+D:\CARITO ---Trabajos\5 Tecnologias Web\Practice 2 Web Api v2\Practice_2_v2\Logic\bin\Debug\net5.0\ref\Logic.dll
+D:\CARITO ---Trabajos\5 Tecnologias Web\Practice 2 Web Api v2\Practice_2_v2\Logic\bin\Debug\net5.0\Logic.pdb
+D:\CARITO ---Trabajos\5 Tecnologias Web\Practice 2 Web Api v2\Practice_2_v2\Logic\obj\Debug\net5.0\Logic.csproj.AssemblyReference.cache
+D:\CARITO ---Trabajos\5 Tecnologias Web\Practice 2 Web Api v2\Practice_2_v2\Logic\obj\Debug\net5.0\Logic.GeneratedMSBuildEditorConfig.editorconfig
+D:\CARITO ---Trabajos\5 Tecnologias Web\Practice 2 Web Api v2\Practice_2_v2\Logic\obj\Debug\net5.0\Logic.AssemblyInfoInputs.cache
+D:\CARITO ---Trabajos\5 Tecnologias Web\Practice 2 Web Api v2\Practice_2_v2\Logic\obj\Debug\net5.0\Logic.AssemblyInfo.cs
+D:\CARITO ---Trabajos\5 Tecnologias Web\Practice 2 Web Api v2\Practice_2_v2\Logic\obj\Debug\net5.0\Logic.csproj.CoreCompileInputs.cache
+D:\CARITO ---Trabajos\5 Tecnologias Web\Practice 2 Web Api v2\Practice_2_v2\Logic\obj\Debug\net5.0\Logic.dll
+D:\CARITO ---Trabajos\5 Tecnologias Web\Practice 2 Web Api v2\Practice_2_v2\Logic\obj\Debug\net5.0\ref\Logic.dll
+D:\CARITO ---Trabajos\5 Tecnologias Web\Practice 2 Web Api v2\Practice_2_v2\Logic\obj\Debug\net5.0\Logic.pdb

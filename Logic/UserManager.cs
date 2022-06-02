@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Logic
 {
-    public class UserManager
+    public class UserManager : IUserManager
     {
         public List<User> Users { get; set; }
         public UserManager()
@@ -20,7 +20,7 @@ namespace Logic
             return Users;
         }
       
-        public User PostUse(User user)
+        public User PostUser(User user)
         {
             Users.Add(user);
             return user;

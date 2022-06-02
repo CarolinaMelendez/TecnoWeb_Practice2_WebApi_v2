@@ -1,3 +1,4 @@
+using Logic;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -33,6 +34,9 @@ namespace Practice_2_v2
         {
 
             services.AddControllers();
+
+            services.AddSingleton<IUserManager, UserManager>();
+
             services.AddSwaggerGen(options =>
             {
                 var groupName = "v1";
