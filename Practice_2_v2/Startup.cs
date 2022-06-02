@@ -44,6 +44,7 @@ namespace Practice_2_v2
                 options.SwaggerDoc(groupName, new OpenApiInfo
                 {
                     Title = $"{Configuration.GetSection("Application").GetSection("Title").Value } - {groupName}",
+                    //Title = $"title",
                     Version = groupName,
                     Description = "Implementación básico de Web APIs",
                     Contact = new OpenApiContact
