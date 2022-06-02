@@ -15,9 +15,15 @@ namespace Practice_2_v2
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IWebHostEnvironment env)
         {
-            Configuration = configuration;
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: false, reloadOnChange: true)
+                .AddEnvironmentVariables();
+
+            Configuration = builder.Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -33,7 +39,7 @@ namespace Practice_2_v2
 
                 options.SwaggerDoc(groupName, new OpenApiInfo
                 {
-                    Title = $"Practice 2 - {groupName}",
+                    Title = $"{Configuration.GetSection("Application").GetSection("Title").Value } - {groupName}",
                     Version = groupName,
                     Description = "Implementación básico de Web APIs",
                     Contact = new OpenApiContact
